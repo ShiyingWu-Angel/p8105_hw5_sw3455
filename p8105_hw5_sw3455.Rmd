@@ -76,7 +76,7 @@ ttest_result |>
 As the effect size increases (meaning the true mean mu  be larger away from the null hypothesis mean  0), the power of the test increases(higher proportion  of rejection) exponentialy. As true mean reach more than 4, the rejection more and more close to 1.
 
 
-```{r problem2 plot2, fig.width = 8, fig.asp = 0.6}
+```{r problem2 plot2 & plot3, fig.width = 8, fig.asp = 0.6}
 ttest_result |>
   group_by(mu) |>
   summarise(Sample_Mean = mean(estimate)) |>
